@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="styling.css" />
+  </head>
+  <body>
+    <div class = "ui-sign-up">
+      <div class = "ui-sign-up-container">
+        <div class = "ui-sign-up-image">
+        </div>
+
+        <form class = "ui-sign-up-form">
+          <div class = "ui-sign-up-form-label">
+            Create an Account!
+          </div>
+
+          <div class = "ui-sign-up-form-fields">
+            <input class = "ui-field" type = "text" id = "nomeid" placeholder="First Name"/>
+            <input class = "ui-field" type = "tel" id = "foneid" placeholder="Phone"/>
+            <input class = "ui-field ui-field-max" type = "text" id = "emailid" placeholder="Email Address"/>
+            <input class = "ui-field" type = "password" id = "passwordid" placeholder="Password"/>
+            <input class = "ui-field" type = "password" id = "rpasswordid" placeholder="Repeat password"/>
+          </div>
+          
+          
+          <div class = "ui-sign-up-form-options">
+            <button class = "ui-sign-up-form-button"  type = "button" onclick = "main.register()">Register Account</button>
+          </div>
+          <div class = "ui-sign-up-form-options">
+            <button class = "ui-sign-up-form-button ui-google-button"  type = "button" onclick = "main.register('google')">
+              <img src = "google.png"/> <span>Register with Google</span>
+            </button>
+            <button class = "ui-sign-up-form-button ui-facebook-button"  type = "button" onclick = "main.register('facebook')">
+              <img src = "face.png"/> <span>Register with Facebook</span>
+            </button>
+          </div>
+          <div class = "ui-sign-up-form-options ui-sign-up-form-text-options" style = "border: unset;">
+            <div class = "ui-sign-up-form-text-button">
+              Forgot Password
+            </div>
+            <div class = "ui-sign-up-form-text-button">
+              Already have an account? Login
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src = "main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+
+* {
+  display: block;
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(80, 118, 219);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.ui-sign-up {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.ui-sign-up-container {
+  overflow: auto;
+  display: flex;
+  height: 100%;
+  width: 80%;
+  background: white;
+  border-radius: 10px;
+}
+
+.ui-sign-up-image {
+  width: 640px;
+  background-image: url('pug.jpg');
+  background-size: 100% 100%;
+}
+
+.ui-sign-up-form {
+  flex: 1;
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-flow: column;
+  padding: 40px 60px 40px 60px;
+}
+
+.ui-sign-up-form-label {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 25px;
+  margin: 7px;
+  
+}
+
+.ui-sign-up-form-fields,
+.ui-sign-up-form-options {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.ui-field {
+  flex: 1;
+  margin: 10px;
+  height: 70px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0,0.2);
+  border-radius: 50px;
+  padding: 0px 15px 0px 15px;
+  caret-color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+}
+
+.ui-field-max {
+  width: 100%;
+  flex: unset;
+}
+.ui-sign-up-form-options {
+  border-bottom: 1px solid rgba(0, 0, 0,0.1);
+  padding: 10px;
+  flex-flow: column;
+}
+
+.ui-sign-up-form-button {
+  outline: unset;
+  border: unset;
+  width: 100%;
+  margin: 5px;
+  height: 70px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color:rgb(80, 118, 219);
+  color: white;
+  cursor: pointer;
+}
+
+.ui-sign-up-form-button:hover {
+  box-shadow: inset 0px 0px 10px 1px rgba(0,0,0,0.4);
+}
+
+.ui-sign-up-form-text-options {
+  padding-top: 30px;
+}
+
+.ui-sign-up-form-text-button {
+  font-size: 18px;
+  color: rgb(104, 120, 180);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.ui-sign-up-form-button .span {
+  margin-left: 5px;
+}
+
+.ui-google-button {
+  margin-top: 20px;
+  background-color:rgb(231, 68, 61);
+}
+
+.ui-facebook-button {
+  background-color: rgb(60, 90, 150);
+}
